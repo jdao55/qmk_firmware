@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |LShift|   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
      * `-----------------------------------------/       /     \      \-----------------------------------------'
      *                   | LGUI | LAlt | NUM  | /Space  /       \Enter \  | SYM  | ALT  | RGUI |
-     *                   |      |      |      |/       /         \ NAV  \ |BSPC  |      |      |
+     *                   |      |      |      |/ LSHFT /         \ NAV  \ |BSPC  |      |      |
      *                   `----------------------------'           '------''--------------------'
      */
 
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        KC_TAB,           KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                      KC_Y, KC_U,         KC_I,         KC_O,         KC_P,      KC_BSPC,
                        KC_LCTL,          KC_A,         LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G,                      KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), KC_SCLN,   KC_QUOT,
                        TD(TD_LSFT_CAPS), KC_Z,         KC_X,         KC_C,         KC_V,         KC_B, KC_LBRC,  TG(_GAME), KC_N, KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,   KC_RSFT,
-                                                                     KC_LGUI, KC_LALT, MO(_NUM), KC_SPC,                    LT(_NAV, KC_ENT), LT(_SYM, KC_BSPC), KC_RALT, KC_RGUI),
+                                                                     KC_LGUI, KC_LALT, MO(_NUM), LSFT_T(KC_SPC),            LT(_NAV, KC_ENT), LT(_SYM, KC_BSPC), KC_RALT, KC_RGUI),
     /* NUM
      * ,-----------------------------------------.                    2,-----------------------------------------.
      * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  | F10  | F11  | F12  |
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_ESC,  KC_EXLM,      KC_AT,        KC_HASH,      KC_DLR,       KC_PERC,                         KC_CIRC, KC_AMPR,      KC_ASTR,      KC_LPRN,      KC_RPRN,      KC_DEL,
                     _______, KC_1,         LALT_T(KC_2), LSFT_T(KC_3), LCTL_T(KC_4), KC_5,                            KC_6,    RCTL_T(KC_7), RSFT_T(KC_8), RALT_T(KC_9), KC_0,         KC_TILD,
                     _______, KC_MPRV,      KC_MPLY,       KC_MNXT,     _______,      _______,  _______,      _______, XXXXXXX, KC_UNDS,      KC_PLUS,      KC_LCBR,      KC_RCBR,      KC_PIPE,
-                                           _______,       _______,     _______,      _______,                         KC_ENT,  KC_BSPC,      _______,      _______),
+                                           _______,       _______,     _______,      KC_SPC,                         KC_ENT,  KC_BSPC,      _______,      _______),
     /* SYM
      * ,-----------------------------------------.                    ,-----------------------------------------.
      * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     _______, KC_AMPR, KC_PIPE, KC_SLSH, KC_BSLS, KC_ASTR,                     _______, KC_LBRC, KC_RBRC, KC_LABK, KC_RABK, KC_DEL,
                     KC_GRV,  KC_PLUS, KC_MINS, KC_UNDS, KC_EQL,  _______,                     XXXXXXX, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR, KC_TILD,
                     _______, _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______, _______,
-                                      _______, _______, _______, _______,                     _______, _______, _______, _______),
+                                      _______, _______, _______, KC_SPC,                     _______, _______, _______, _______),
     /* NAV
      * ,-----------------------------------------.                    ,-----------------------------------------.
      * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
