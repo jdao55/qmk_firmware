@@ -22,6 +22,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define QUICK_TAP_TERM 0
 #define TAPPING_TERM 200
+#define FLOW_TAP_TERM 150
+#define CHORDAL_HOLD
+#define PERMISSIVE_HOLD
 
 #undef RGBLIGHT_LED_COUNT
 #define RGBLIGHT_EFFECT_BREATHING
