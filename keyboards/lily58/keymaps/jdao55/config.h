@@ -21,9 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 // auto detect main keyboard half for pi pico
 // #define SPLIT_USB_DETECT
-#define USB_WAIT_FOR_ENUMERATION
-#define USB_TIMEOUT 2500
-
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 3000
 
 
 #define QUICK_TAP_TERM 0
